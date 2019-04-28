@@ -9,6 +9,7 @@ class Team(models.Model):
     tasks_average = models.IntegerField(default=1)
     points_per_day = models.IntegerField(default=1)
     points_average = models.IntegerField(default=1)
+    mult = models.IntegerField(default=2)
 
     def __str__(self):
         return self.name

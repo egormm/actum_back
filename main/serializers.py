@@ -29,4 +29,4 @@ class RatingEmployeeSerializer(serializers.ModelSerializer):
 class RatingTeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
-        fields = ('name', 'rating', 'points_per_day')
+        fields = ('name', 'rating', 'points_per_day', 'mult')

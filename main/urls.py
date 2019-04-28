@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import EmployeeView, EventsView, challenge, rating
+from .views import EmployeeView, EventsView, challenge, rating, poll, show_poll
 from django.views.static import serve
 from actum_back import settings
 
@@ -14,4 +14,6 @@ urlpatterns = [
     path('events/', EventsView.as_view()),
     path('challenges/<r_type>', challenge),
     path('rating/<r_type>', rating),
+    path('poll/<int:option>', poll),
+    path('show_poll/', show_poll)
 ]
